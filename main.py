@@ -23,6 +23,7 @@ app = web.Application()
 aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('templates'))
 
 handlers.udp_setup(app)
+handlers.tcp_setup(app)
 
 app.router.add_static('/static/', path='static')
 

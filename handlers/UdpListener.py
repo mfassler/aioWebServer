@@ -4,6 +4,8 @@ import asyncio
 import config
 
 app = None
+
+
 def setup(_app):
     global app
     app = _app
@@ -11,9 +13,9 @@ def setup(_app):
     app.on_cleanup.append(cleanup_background_tasks)
 
 
-
 class UDP_Receiver(asyncio.DatagramProtocol):
     def connection_made(self, transport):
+        logging.debug('connection_made: %s' % (transport))
         self.transport = transport
 
     def datagram_received(self, data, addr):

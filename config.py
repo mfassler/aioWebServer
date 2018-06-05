@@ -1,4 +1,7 @@
 
+TCP_LISTEN_HOST = 'localhost'
+TCP_LISTEN_PORT = 5006
+
 UDP_LISTEN_HOST = 'localhost'
 UDP_LISTEN_PORT = 5006
 

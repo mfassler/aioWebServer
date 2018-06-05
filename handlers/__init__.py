@@ -4,5 +4,6 @@ from .Index import Index
 
 from .WebSocket import WebSocket
 from .UdpListener import setup as udp_setup
+from .TcpListener import setup as tcp_setup
 
 
